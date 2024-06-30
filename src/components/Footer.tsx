@@ -1,6 +1,6 @@
-import AppStoreSVG from "./AppStoreSVG";
-import MicrosoftSVG from "./Microsoft";
-import PlayStoreSVG from "./PlayStore";
+import AppStoreSVG from "./icons/AppStoreSVG";
+import MicrosoftSVG from "./icons/Microsoft";
+import PlayStoreSVG from "./icons/PlayStore";
 
 function Footer() {
   return (

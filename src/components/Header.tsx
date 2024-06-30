@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../css/style.css";
 
 function Header() {
   const [buttonDisplay, setButtonDisplay] = useState(false);
@@ -30,11 +32,13 @@ function Header() {
     [displayPopUp]
   );
   return (
-    <div className="px-7 lg:px-20 py-3 bg-[#017efe] relative">
+    <div className="px-7 lg:px-20 py-3 bg-[#017efe] custom-shadow relative">
       <div className="flex justify-between items-center">
-        <h3 className="text-[#fdfdfd] font-semibold text-2xl lg:text-3xl leading-[38.74px] whitespace-nowrap">
-          DEMO Streaming
-        </h3>
+        <Link to="/">
+          <h3 className="text-[#fdfdfd] font-semibold text-2xl lg:text-3xl leading-[38.74px] whitespace-nowrap">
+            DEMO Streaming
+          </h3>
+        </Link>
 
         {buttonDisplay === true && (
           <div className="flex items-center gap-8">

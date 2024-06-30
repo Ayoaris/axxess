@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 
 function DefaultLayout() {
   return (
-    <div className="h-screen">
+    <div className="">
       <Header />
 
-      <main className="w-full max-w-full">
+      <main className="w-full max-w-full h-screen">
         <Outlet />
       </main>
 
