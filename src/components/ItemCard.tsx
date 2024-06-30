@@ -6,7 +6,6 @@ type ItemCardProps = {
 };
 
 function ItemCard({ title, image }: ItemCardProps) {
-  //   console.log({ imageUrl: image?.PosterArt?.url });
   const [imageSrc, setImageSrc] = useState(image);
 
   const handleError = () => {

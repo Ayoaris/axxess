@@ -32,7 +32,7 @@ function Header() {
     [displayPopUp]
   );
   return (
-    <div className="px-7 lg:px-20 py-3 bg-[#017efe] custom-shadow relative">
+    <div className="px-7 lg:px-20 py-3 bg-[#017efe] shadow-[0px_3px_10px_0px_rgba(0,0,0,0.66)] relative">
       <div className="flex justify-between items-center">
         <Link to="/">
           <h3 className="text-[#fdfdfd] font-semibold text-2xl lg:text-3xl leading-[38.74px] whitespace-nowrap">

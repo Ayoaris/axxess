@@ -26,6 +26,7 @@ function Series() {
           .toLowerCase()
           .includes(searchInput.length > 3 ? searchInput.toLowerCase() : "")
       )
+      //@ts-ignore
       .sort((a, b) => {
         if (filterOption === "Year-Asc") {
           return a.releaseYear - b.releaseYear;

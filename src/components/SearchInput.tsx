@@ -6,7 +6,7 @@ type SearchInputProps = {
 };
 function SearchInput({ searchInput, handleChange }: SearchInputProps) {
   return (
-    <div className="border border-[#b6b6b6] h-[45px] pl-5 flex w-[433px]">
+    <div className="border border-[#b6b6b6] h-[45px] pl-5 flex w-[433px] shadow-[0px_3px_10px_0px_rgba(0,0,0,0.18)]">
       <input
         type="text"
         className="border-none outline-none w-full h-full text-xs text-[#b4b4b4]"
