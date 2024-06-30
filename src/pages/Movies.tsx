@@ -4,7 +4,6 @@ import ItemCard from "../components/ItemCard";
 import { useState } from "react";
 import SearchInput from "../components/SearchInput";
 import SelectInput from "../components/SelectInput";
-import { DataType } from "../hooks/types";
 
 function Movies() {
   const { data, isLoading, isError, isSuccess } = getMovies();
