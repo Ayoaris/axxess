@@ -4,6 +4,7 @@ import PageHeader from "../components/PageHeader";
 import SearchInput from "../components/SearchInput";
 import SelectInput from "../components/SelectInput";
 import { getSeries } from "../hooks";
+
 function Series() {
   const { data, isLoading, isError, isSuccess } = getSeries();
 

@@ -6,10 +6,13 @@ This project is built using Vite due to compatibility issues encountered with Cr
 
 ### Starting the Project
 
-To start the project, use the following command:
+To start the project "AxxessMovies.com", use the following command:
 
 ```
-yarn dev
+Clone the repository
+Installation: Yarn install
+Run command : yarn dev
+
 ```
 
 ### Styling and Responsiveness
@@ -33,17 +36,26 @@ Some icons required for the project were not provided in the assets folder. To a
 
 ### Data Fetching
 
-Axios was installed along with React Query to fetch data from the API. The query functions are stored in a `hooks` folder, which is responsible for fetching Movies and Series data.
+After going through the react query documentation and a little practice, the next day I took up the challenge to implement react query into the project, which was a nice experince, because it helps handle alot of server side state management such as isLoading, isPending, isError etc by destructuring it out of the query function.
+Axios was installed along with React Query to fetch data from the API. The query functions are stored in a `hooks` folder, which is responsible for fetching Movies and Series data, further research I found out using axios wasn't not strictly necessary, but it is a common and practical combination.
 
 ### Handling Data Fetching Issues
 
 During data fetching, issues were encountered with some URLs in the provided JSON file, which resulted in images not displaying. To mitigate this, the `lazy` attribute was added to image tags to ensure content loads progressively. It was also discovered that some URLs were deprecated in the JSON list, while some don't correspond with the title.
 
-I wasn't comfortable with url broken, so i had create a state to replace the url with static url onError displaying broken urls
+I wasn't comfortable with url broken, so i had create a state to replace the url with static url onError displaying no poster found instead of broken url images
 
 ### Customization
 
-The title and icon of the app were customized by modifying the `index.html` file. This helps in personalizing the application to better align with project requirements.
+The title and icon of the app were customized by modifying the `index.html` file. changing the svg icon, This helps in personalizing the application to better align with project requirements.
+
+## Testing
+
+Installed Jest and react
+
+I started out reading the documentation and trying to follow some tutorials to implement testing, but i kept getting errors on yarn test,
+
+Validation Error :Module@testing-libary/jest-dom/exted-expect in the setupFileAfterEnv option was not found.
 
 ### Conclusion
 
