@@ -7,7 +7,7 @@ function DefaultLayout() {
     <div className="">
       <Header />
 
-      <main className="w-full max-w-full h-[983px]">
+      <main className="w-full max-w-full h-[983px] overflow-y-auto">
         <Outlet />
       </main>
 

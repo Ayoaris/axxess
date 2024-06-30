@@ -44,7 +44,7 @@ function Movies() {
       <PageHeader title="Popular Movies" />
 
       <div className="w-full h-full px-7 lg:px-20 py-5">
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
           <SearchInput
             searchInput={searchInput}
             handleChange={handleSearchInputChange}

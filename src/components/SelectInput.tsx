@@ -5,7 +5,7 @@ type SelectInputProps = {
 
 function SelectInput({ filterOption, handleChange }: SelectInputProps) {
   return (
-    <div className="border border-[#b6b6b6] w-[286px] h-[37px] shadow-[0px_3px_10px_0px_rgba(0,0,0,0.18)]">
+    <div className="border border-[#b6b6b6] w-full lg:w-[286px] h-[37px] shadow-[0px_3px_10px_0px_rgba(0,0,0,0.18)]">
       <select
         className="border-none outline-none w-full h-full text-[#b4b4b4] text-xs px-2"
         aria-placeholder="Sort By"
