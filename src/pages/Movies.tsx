@@ -4,6 +4,7 @@ import ItemCard from "../components/ItemCard";
 import { useState } from "react";
 import SearchInput from "../components/SearchInput";
 import SelectInput from "../components/SelectInput";
+import { DataType } from "../hooks/types";
 
 function Movies() {
   const { data, isLoading, isError, isSuccess } = getMovies();
@@ -57,7 +58,7 @@ function Movies() {
 
         {isLoading === true && (
           <div className="text-[#414141] text-sm mt-6 h-[393px]">
-            Loading.....
+            Loading...
           </div>
         )}
         {isError === true && (

@@ -24,6 +24,8 @@ The application uses `react-router-dom` for client-side routing. This enables se
 
 - **Header, Footer, LinkCard**: These components handle the layout and navigation, displaying routes to either the Series or Movies components.
 - **ItemCard**: A reusable component that displays content, including URL images and program titles, for both Movies and Series.
+- \*\*Search Input: Implements filtering based on title attribute values of movies and series, activating after typing three characters.
+- \*\*Sort Input: Allows sorting by year and title in ascending or descending order.
 
 ### Icon Management
 
@@ -35,7 +37,9 @@ Axios was installed along with React Query to fetch data from the API. The query
 
 ### Handling Data Fetching Issues
 
-During data fetching, issues were encountered with some URLs in the provided JSON file, which resulted in images not displaying. To mitigate this, the `lazy` attribute was added to image tags to ensure content loads progressively. It was also discovered that some URLs were deprecated in the JSON list.
+During data fetching, issues were encountered with some URLs in the provided JSON file, which resulted in images not displaying. To mitigate this, the `lazy` attribute was added to image tags to ensure content loads progressively. It was also discovered that some URLs were deprecated in the JSON list, while some don't correspond with the title.
+
+I wasn't comfortable with url broken, so i had create a state to replace the url with static url onError displaying broken urls
 
 ### Customization
 

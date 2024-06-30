@@ -11,7 +11,7 @@ function Home() {
     <div className="w-full">
       <PageHeader title="Popular Titles" />
 
-      <div className="w-full mt-6 px-7 py-8 lg:px-20 h-3/4">
+      <div className="w-full mt-6 px-7 py-8 lg:px-20">
         <div className="flex gap-8">
           <LinkCard
             title="SERIES"

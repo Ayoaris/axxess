@@ -57,7 +57,7 @@ function Series() {
 
         {isLoading === true && (
           <div className="text-[#414141] text-sm mt-6 h-[393px]">
-            Loading.....
+            Loading...
           </div>
         )}
         {isError === true && (

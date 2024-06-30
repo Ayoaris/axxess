@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 type ItemCardProps = {
   title: string;
   image: string;
@@ -5,11 +7,19 @@ type ItemCardProps = {
 
 function ItemCard({ title, image }: ItemCardProps) {
   //   console.log({ imageUrl: image?.PosterArt?.url });
+  const [imageSrc, setImageSrc] = useState(image);
+
+  const handleError = () => {
+    setImageSrc(
+      "https://eticketsolutions.com/demo/themes/e-ticket/img/movie.jpg"
+    );
+  };
   return (
     <div className="w-full">
       <img
-        src={image}
+        src={imageSrc}
         className="w-full h-[201px]"
+        onError={handleError}
         alt="image photo"
         loading="lazy"
       />
